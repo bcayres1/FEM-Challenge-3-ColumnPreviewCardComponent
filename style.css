@@ -12,18 +12,18 @@
     --ff-big-shoulders:'Big Shoulders Display', cursive;
     }
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
 
     .attribution {
         font-size: 0.7rem;
         text-align: center;
         align-self: center; 
         position: relative;
-        top: 130px;
+        top:60px;
 
 }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -41,17 +41,17 @@
     padding: 2rem
 }
 
-    .wrapper {
+    .card {
         max-width: 63rem;
-        max-height: 100vh;
+        max-height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         border-radius: .5rem;
-        overflow: hidden;
     }
     
     section {
         padding: 3rem;
+        position: relative;
     }
 
     img {
@@ -100,6 +100,8 @@
 
     .sedans {
         background-color: var(--p-orange);
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
     }
 
     .suvs {
@@ -108,4 +110,83 @@
 
     .luxury {
         background-color: var(--p-very-dark-cyan);
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
     }
+   
+    @media screen and (max-width:880px){
+
+        body {
+            padding: 6rem 3rem;
+            height: 100%;
+        }
+
+        .sedans {
+            border-bottom-left-radius: 0;
+            border-top-right-radius: .5rem;
+        }
+
+        .luxury {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: .5rem;
+        }
+            
+        .card {
+                display: grid;
+                grid-template-columns: 1fr;
+                
+        }
+
+        .attribution {
+            position: relative;
+            top: 50px;
+        }
+        
+    }
+
+    @media screen and (max-width: 425px){
+
+        body {
+            padding: 6rem 2rem;
+        }
+
+        img {
+            width: 64px;
+            height: 40px;
+        }
+
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        button {
+            margin: 2rem 0 0;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+        }
+
+    }
+
+    @media screen and (max-width:375px){
+
+        body {
+            padding: 5rem 2rem;
+        }
+
+       h2 {
+        font-size: 1.875;
+       }
+
+       p {
+        font-size: 0.875rem;
+       }
+
+       button {
+        font-size: 0.875rem;
+       }
+    }  
