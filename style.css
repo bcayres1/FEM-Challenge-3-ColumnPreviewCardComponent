@@ -38,10 +38,12 @@
     font-size: 15px;
     display: grid;
     place-content: center;
+    padding: 2rem
 }
 
     .wrapper {
         max-width: 63rem;
+        max-height: 100vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         border-radius: .5rem;
