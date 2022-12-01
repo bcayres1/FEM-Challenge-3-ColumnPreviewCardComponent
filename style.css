@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --p-orange: hsl(31, 77%, 52%);
+    --p-dark-cyan: hsl(184, 100%, 22%);
+    --p-very-dark-cyan: hsl(179, 100%, 13%);
+
+    --s-background-headings-buttons:hsl(0, 0%, 95%);
+    --s-paragraph:hsla(0, 0%, 100%, 0.75);
+
+    --ff-lexend-deca: 'Lexend Deca', sans-serif;
+    --ff-big-shoulders:'Big Shoulders Display', cursive;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .attribution {
+        font-size: 0.7rem;
+        text-align: center;
+        align-self: center; 
+        position: relative;
+        top: 130px;
+
+}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    
+    body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--s-background-headings-buttons);
+    background-size: 100%;
+    font-family: var(--ff-lexend-deca);
+    font-size: 15px;
+    display: grid;
+    place-content: center;
+}
+
+    .wrapper {
+        max-width: 63rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: .5rem;
+        overflow: hidden;
+    }
+    
+    section {
+        padding: 3rem;
+    }
+
+    img {
+        width: 74px;
+        height: 50px;
+    }
+
+    h2 {
+        font-family: var(--ff-big-shoulders);
+        font-size: 3rem;
+        color: var(--s-background-headings-buttons);
+        text-transform: uppercase;
+        margin: 2rem 0;  
+    }  
+
+    p {
+        color: var(--s-paragraph);
+        font-size: 1.0875rem;
+        line-height: 1.6;
+    }
+
+    button {
+        background-color: var(--s-background-headings-buttons);
+        padding: 1rem 2rem;
+        font-size: 1.0875rem;
+        font-weight: 700;
+        mix-blend-mode: lighten;
+        margin: 6rem 0 0;
+        border-radius: 2rem;
+        border: 3px solid var(--s-background-headings-buttons);
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    footer {
+            position: relative;
+            top: 40px;
+        
+    }
+
+    button:hover {
+        background-color: transparent;
+        color: var(--s-background-headings-buttons);
+
+    }
+
+    .sedans {
+        background-color: var(--p-orange);
+    }
+
+    .suvs {
+        background-color: var(--p-dark-cyan);
+    }
+
+    .luxury {
+        background-color: var(--p-very-dark-cyan);
+    }
