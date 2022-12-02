@@ -35,7 +35,7 @@
     background-color: var(--s-background-headings-buttons);
     background-size: 100%;
     font-family: var(--ff-lexend-deca);
-    font-size: 1.0875rem;
+    font-size: 0.9375rem;
     display: grid;
     place-content: center;
     padding: 2rem
